@@ -7,18 +7,13 @@ class Animal {
 		return this.species;
 	}
 	makeSound(){
-		if(species===Dog){
-			return Dog.bark();
-		}
-		else{
-			return Cat.purr();
-		}
+		console.log(`${species} makes a sound`)
 	}
 }
 
 class Dog extends Animal {
 	constructor(){
-		super("Dog");
+		super(species);
 	}
 	bark(){
 		console.log("woof")
@@ -27,7 +22,7 @@ class Dog extends Animal {
 
 class Cat extends Animal {
 	constructor(){
-		super("Cat");
+		super(species);
 	}
 	purr(){
 		console.log("purr")
