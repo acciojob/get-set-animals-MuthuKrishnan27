@@ -14,7 +14,7 @@ class Animal {
 
 class Dog extends Animal {
 	species;
-	constructor(){
+	constructor(species){
 		super(species);
 	}
 	bark(){
@@ -24,7 +24,7 @@ class Dog extends Animal {
 
 class Cat extends Animal {
 	species;
-	constructor(){
+	constructor(species){
 		super(species);
 	}
 	purr(){
@@ -36,3 +36,5 @@ class Cat extends Animal {
 window.Animal = Animal;
 window.Dog = Dog;
 window.Cat = Cat;
+
+
